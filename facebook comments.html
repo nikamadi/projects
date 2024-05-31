@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Facebook Comment</h1>
+    <div id="postform">
+      <textarea id="postText" placeholder="Write a post"></textarea><br />
+      <button id="postButton">Post</button>
+    </div>
+    <div id="postContainer"></div>
+    <script>
+      let postButton = document.getElementById("postButton");
+      function post() {
+        let postText = document.getElementById("postText").value;
+        console.log(postText);
+      }
+      postButton.addEventListener("click", post);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,600 @@
+/* this is for whole body */
+body {
+  background-color: rgba(230, 228, 226, 0.493);
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/* header tag */
+header {
+  display: flex;
+}
+
+/* this is for left side of the header */
+.headerleft {
+  width: 100px;
+  height: 70px;
+  background-color: white;
+  margin-bottom: 10px;
+  flex-grow: 3;
+  margin-right: 2px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* this is for the td used in the navbar */
+td {
+  padding: 0px 15px;
+}
+
+/* this is for right side of the header */
+.headerright {
+  width: 100px;
+  height: 70px;
+  background-color: white;
+  margin-bottom: 10px;
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-start;
+}
+
+/* this is for linkedin icon */
+.icon {
+  margin-left: 250px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+/* this is fir the searchbar inside the header */
+.searchbar {
+  width: 300px;
+  height: 34px;
+  margin: 20px 0px 0px 5px;
+  padding-left: 10px;
+  border-radius: 3px;
+  background-color: rgb(242, 244, 247);
+}
+h1 {
+  /*linkedin icon*/
+  color: white;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  padding: 0px 0px 9px 6px;
+  border-radius: 3px;
+  width: 35px;
+  height: 30px;
+  background-color: rgb(6, 110, 207);
+}
+
+/* this is for the svg images */
+svg {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 0px;
+}
+
+/* this is for the text given by p tag */
+.p {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: rgba(85, 84, 84, 0.877);
+}
+
+/* this is the effect after hover on p */
+.p:hover {
+  background-color: lightgrey;
+}
+
+/* this is for navbar inside header */
+.navbar {
+  margin-left: 0px;
+}
+
+/* hover effect on navbar */
+.nav:hover {
+  color: black;
+  background-color: rgb(245, 237, 212);
+  text-decoration-line: underline;
+  text-underline-offset: 4px;
+  font-size: 20px;
+  box-shadow: 2px 3px 4px rgb(114, 100, 73);
+  border-radius: 5px;
+}
+
+/* this is for the anchor tag in header  */
+.a:hover {
+  color: rgb(228, 18, 165);
+}
+
+/* this is for the hover effect for business in header */
+summary:hover {
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 1px rgb(3, 48, 143), 1px 2px 3px grey;
+  text-decoration: underline;
+  color: rgb(99, 216, 22);
+}
+
+/* this is the partition and style of the main linkedin body */
+main {
+  width: 1400px;
+  height: 220vh;
+  background-color: rgba(230, 228, 226, 0.493);
+
+  display: grid;
+  grid-template-areas:
+    "main_left1 main_mid1 main_mid1 main_right1"
+    "main_left1 main_mid2 main_mid2 main_right1"
+    "main_left1 main_mid2 main_mid2 main_right1"
+    "main_left2 main_mid2 main_mid2 main_right2"
+    "main_left3 main_mid2 main_mid2 main_right2"
+    "main_left3 main_mid2 main_mid2 main_right3"
+    "main_left3 main_mid3 main_mid3 main_right3"
+    "main_left3 main_mid3 main_mid3 main_right3"
+    "main_left3 main_mid3 main_mid3 main_right4"
+    "main_left3 main_mid3 main_mid3 main_right4"
+    "main_left3 main_mid3 main_mid3 main_right4"
+    "main_left3 main_mid3 main_mid3 main_right4"
+    "main_left3 main_mid3 main_mid3 main_right4"
+    "main_left3 main_mid4 main_mid4 main_right4";
+  gap: 10px;
+  grid-template-columns: 0.9fr 1.2fr 1.2fr 0.7fr;
+  grid-template-rows: 1.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
+}
+
+/* for main-left1 block */
+#main_left1 {
+  border: 1px solid rgb(201, 200, 200);
+  border-radius: 10px;
+  grid-area: main_left1;
+  background-color: white;
+  box-shadow: 1px 1px 4px grey;
+}
+
+/* for main-left2 block */
+#main_left2 {
+  border: 1px solid rgb(201, 200, 200);
+  padding-top: 5px;
+  border-radius: 10px;
+  grid-area: main_left2;
+  background-color: white;
+  box-shadow: 1px 1px 4px grey;
+}
+
+/* for main-mid1 block */
+#main_mid1 {
+  border: 1px solid rgb(201, 200, 200);
+  padding-top: 5px;
+  border-radius: 10px;
+  grid-area: main_mid1;
+  background-color: white;
+  box-shadow: 1px 1px 4px grey;
+}
+
+/* for main-mid2 block */
+#main_mid2 {
+  border: 1px solid rgb(201, 200, 200);
+  padding-top: 5px;
+  border-radius: 10px;
+  grid-area: main_mid2;
+  background-color: white;
+  box-shadow: 1px 1px 4px grey;
+}
+
+/* for main-mid3 block */
+#main_mid3 {
+  border: 1px solid rgb(201, 200, 200);
+  padding-top: 5px;
+  border-radius: 10px;
+  grid-area: main_mid3;
+  background-color: white;
+  box-shadow: 1px 1px 4px grey;
+}
+
+/* for main-right1 block */
+#main_right1 {
+  border: 1px solid rgb(201, 200, 200);
+  padding-top: 5px;
+  border-radius: 10px;
+  grid-area: main_right1;
+  background-color: white;
+  box-shadow: 1px 1px 4px grey;
+}
+
+/* for main-right2 block */
+#main_right2 {
+  position: sticky;
+  top: 10px;
+  border: 1px solid rgb(201, 200, 200);
+  padding-top: 5px;
+  border-radius: 10px;
+  grid-area: main_right2;
+  background-color: white;
+  box-shadow: 1px 1px 4px grey;
+}
+
+/* for main-right3 block */
+#main_right3 {
+  position: sticky;
+  top: 370px;
+  /* border: 1px solid rgb(201, 200, 200); */
+  padding-top: 5px;
+  /* border-radius: 10px; */
+  grid-area: main_right3;
+  /* box-shadow: 1px 1px 4px grey; */
+}
+
+/* #main_right4 {
+  grid-area: main_right4;
+  background-color: rgba(230, 228, 226, 0.493);
+} */
+
+/* profile background image in left1 */
+.profile1 {
+  border-top-left-radius: 10px;
+  margin: 0px;
+  height: 100px;
+  width: 100%;
+  background-image: url(https://cdn.sourceflow.co.uk/k1eheo1tptow26mgm8bxu2tnm1om);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* profile pic in left1 */
+.img-profile {
+  width: 80px;
+  height: 90px;
+  border-radius: 70px;
+  border: 4px solid white;
+  margin-top: 50px;
+  box-shadow: 1px 1px 4px rgb(199, 197, 197);
+}
+
+/* profile name in left1 */
+.head-name {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgba(0, 0, 0, 0.836);
+  margin-bottom: 0px;
+}
+
+/* color given to text in left1 */
+.span {
+  color: rgb(20, 93, 250);
+}
+
+/* style given all over main page */
+.p-light {
+  font-size: 13px;
+  padding-left: 7px;
+  word-spacing: 2px;
+  margin: 0px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: rgba(138, 128, 128, 0.877);
+  text-align: left;
+}
+
+/* width of hr tag */
+hr {
+  width: 93%;
+}
+
+/* yellow symbol in left1 */
+.envolope-symbol {
+  margin-left: 3px;
+  width: 20px;
+  height: 20px;
+  background: linear-gradient(45deg, #b67703 50%, #f7d22e 30%);
+  border-radius: 4px;
+}
+
+/* table in left2 */
+.table {
+  padding: 0px 0px 0px 0px;
+  text-align: left;
+  margin: 0px;
+  display: flex;
+  justify-content: start;
+}
+
+/* style to the text all over the main page */
+.h33 {
+  font-size: 15px;
+  font-weight: bolder;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: rgb(32, 32, 32);
+}
+
+/* hover effect to the style */
+.h33:hover {
+  text-decoration: underline;
+  color: rgb(5, 72, 173);
+}
+
+/* text with  book mark image in left2 */
+.p-bookmark {
+  padding: 0px;
+  margin: 0px;
+  font-size: 20px;
+  font-weight: bolder;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: rgb(32, 32, 32);
+}
+
+/* svg image fo bookmark in left2 */
+.svg {
+  width: 25px;
+  height: 25px;
+  margin-bottom: 0px;
+}
+
+/* for text allover main page  */
+.h3 {
+  color: rgb(5, 72, 173);
+}
+
+/* hover effect to h3 */
+.h3:hover {
+  text-decoration: underline;
+}
+
+/* image in maid1 */
+.img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  box-shadow: 1px 1px 4px grey;
+}
+
+/* searchbar in mid1 */
+.start-post-searchbar {
+  width: 550px;
+  height: 45px;
+  border-radius: 50px;
+  border: 1px solid grey;
+}
+
+/* hover effect to the searchbar */
+.start-post-searchbar:hover {
+  background-color: rgb(236, 233, 233);
+}
+
+/* style for svgs inside mid1 */
+.td {
+  padding: 40px 100px 0px 100px;
+}
+
+/* post icon image and text befote the text  */
+.title-post {
+  /* border-bottom: 1px solid grey; */
+  padding: 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* main post dp image in mid2 and 3 */
+.img-post-dp {
+  margin: 0px;
+  padding: 0px;
+  width: 65px;
+  height: 65px;
+  box-shadow: 1px 1px 4px grey;
+}
+
+/* for svg image */
+.svg {
+  width: 20px;
+  height: 20px;
+  margin-bottom: 0px;
+}
+
+/* different style for h3 tag */
+.h333 {
+  text-align: left;
+  margin: 0px;
+  padding: 4px 0px 0px 15px;
+  font-size: 15px;
+  font-weight: bolder;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: rgb(32, 32, 32);
+}
+
+/* link inside main2 post */
+.h3-link {
+  color: rgb(5, 72, 173);
+  padding: 0px 0px 0px 15px;
+  text-align: left;
+  margin: 0px;
+}
+
+/* hover effect */
+.h3-link:hover {
+  text-decoration: underline;
+}
+
+/* main post images in mid 2-3 */
+.post-img {
+  width: 100%;
+  height: 500px;
+}
+/* class for comments under the post */
+.table-commentbar {
+  padding: 0px 180px 0px 10px;
+}
+
+/* like image under the post */
+.like-img {
+  width: 24px;
+  height: 24px;
+  border-radius: 50px;
+}
+
+/* iframe used for youtube video */
+iframe {
+  width: 100%;
+  height: 500px;
+}
+
+/* text under the post in mid3 */
+.text-underpost {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 25px;
+  color: rgb(78, 77, 77);
+  letter-spacing: 2px;
+  word-spacing: 5px;
+  text-align: left;
+  padding-left: 15px;
+}
+
+/* text undet the post2 */
+.text-underpost2 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgba(0, 0, 0, 0.836);
+  margin-bottom: 0px;
+  text-align: left;
+}
+
+/* i symbol in right1 */
+.i {
+  width: 1px;
+  height: 10px;
+  background-color: rgb(41, 41, 41);
+  color: white;
+  font-family: monospace;
+  border-radius: 50px;
+}
+
+/* list inside the right1 */
+li {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: left;
+  color: rgb(44, 44, 44);
+  padding-left: 0px;
+  margin-left: 0px;
+}
+
+/* hover effect to the ul in right1 */
+ul:hover {
+  background-color: lightgray;
+  box-shadow: 1px 2px 3px rgb(36, 36, 36);
+}
+
+/* show more button in right1 */
+.show-more {
+  margin: 0px;
+  padding: 0px 0px 5px 0px;
+  width: 200px;
+  border-radius: 10px;
+  max-height: 50px;
+  background-color: rgb(224, 221, 221);
+}
+
+/* hover effect to the button */
+.show-more:hover {
+  box-shadow: 2px 2px 6px grey;
+  border: 1px solid grey;
+}
+
+/* svg image with show button in right1 */
+.svg-main-right {
+  width: 15px;
+  height: 15px;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* images in right2 */
+.img-main-right {
+  width: 70px;
+  height: 70px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+/* try for free button in right2 */
+.span-main-right {
+  border: 3px solid rgb(17, 82, 156);
+  color: rgb(17, 82, 156);
+  padding: 5px 20px;
+  margin-top: 20px;
+  border-radius: 50px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: bolder;
+}
+
+/* hover effect to the button */
+.span-main-right:hover {
+  background-color: rgb(17, 82, 156);
+  color: white;
+  box-shadow: 2px 2px 4px rgb(69, 71, 73);
+}
+
+/* text in the end of right3 */
+.end-right {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 11px;
+  color: rgb(71, 71, 71);
+  margin: 0px 0px 100px 0px;
+  padding: 0px 0px 0px 20px;
+}
+
+/* table in right3 */
+.table-main-right {
+  margin-bottom: 10px;
+  text-align: center;
+  margin-right: 20px;
+}
+
+/* hover effect to the table */
+.end-right:hover {
+  color: rgb(4, 55, 112);
+  text-decoration: underline;
+}
+
+/* linkedin symbol at the end in right3 */
+.main-right-linkedin-symbol {
+  width: 15px;
+  height: 15px;
+  margin: 0px 0px 0px 0px;
+  border-radius: 5px;
+}
+
+/* linked text in right3 */
+.linkedin {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  padding-bottom: 10px;
+  margin-right: 0px;
+  color: rgb(2, 80, 170);
+}
+
+/* table at the end in right3 */
+.table-end {
+  margin: 0px;
+}
+
+/* small text at the end in right3 */
+.p-light-end {
+  font-size: 8px;
+  padding-left: 7px;
+  word-spacing: 2px;
+  margin: 0px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: rgba(138, 128, 128, 0.877);
+  text-align: left;
+}

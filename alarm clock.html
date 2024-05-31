@@ -1,0 +1,51 @@
+!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Alarm Clock</h1>
+    <div class="container">
+      <div id="time">
+        <div id="alarmform">
+          <input type="time" id="alarmtime" />
+          <label for="toggle_btn">
+            <input type="checkbox" id="toggleAlarm" />
+          </label>
+          <audio src="./tone.mp3" id="alarmSound"></audio>
+        </div>
+      </div>
+    </div>
+    <button id="btn" onclick="setAlarm()">Check</button>
+    <script>
+      document
+        .getElementById("toggleAlarm")
+        .addEventListener("change", function () {
+          if (this.checked) {
+            setAlarm();
+          } else {
+            clearAlarm();
+          }
+        });
+
+      function setAlarm() {
+        var alarmTime = document.getElementById("alarmtime").value;
+        var alarmHour = parseInt(alarmTime.substring(0, 2));
+        var alarmMinute = parseInt(alarmTime.substring(3, 5));
+        console.log("alarmHour", alarmHour, "alarmMinute", alarmMinute);
+        setInterval(function () {
+          var now = new Date();
+          var currentHour = now.getHours();
+          var currentMinute = now.getMinutes();
+          // console.log(currentHour,currentMinute);
+          if (currentHour === alarmHour && currentMinute === alarmMinute) {
+            document.getElementById("alarmSound").play();
+            console.log("true");
+          }
+        }, 1000);
+      }
+    </script>
+  </body>
+</html>

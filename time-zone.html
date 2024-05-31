@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>welcome to Time Zone</h1>
+    <div class="container_first">
+      <div class="timebox">
+        <h1>India</h1>
+        <p id="india"></p>
+      </div>
+      <div class="timebox">
+        <h1>US</h1>
+        <p id="newyork"></p>
+      </div>
+    </div>
+    <div class="container_second">
+      <div class="timebox">
+        <h1>paris</h1>
+        <p id="paris"></p>
+      </div>
+      <div class="timebox">
+        <h1>London</h1>
+        <p id="london"></p>
+      </div>
+    </div>
+    <script>
+      var indianTime = function () {
+        document.getElementById("india").innerHTML = new Date().toLocaleString(
+          "en-US",
+          { timeZone: "Asia/Kolkata", hourCycle: "h24" }
+        );
+      };
+
+      var newyorkTime = function () {
+        document.getElementById("newyork").innerHTML =
+          new Date().toLocaleString("en-US", { timeZone: "America/New_York" });
+      };
+
+      var parisTime = function () {
+        document.getElementById("paris").innerHTML = new Date().toLocaleString(
+          "en-US",
+          { timeZone: "Europe/paris" }
+        );
+      };
+
+      var londonTime = function () {
+        document.getElementById("london").innerHTML = new Date().toLocaleString(
+          "en-US",
+          { timeZone: "Europe/london" }
+        );
+      };
+
+      setInterval(() => {
+        indianTime();
+        newyorkTime();
+        parisTime();
+        londonTime();
+      }, 1000);
+    </script>
+  </body>
+</html>

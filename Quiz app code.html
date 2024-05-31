@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="Quiz code.css" />
+  </head>
+  <body>
+    <!-- Home Page -->
+    <div id="homePage" class="page">
+      <div class="user-details">
+        <center>
+          <img
+            class="img"
+            src="https://i.pinimg.com/originals/70/17/3d/70173db495a647200ab70cfe5f6182dd.jpg"
+            alt="Logo"
+          />
+        </center>
+        <h1>Welcome to the Quick Quizz!</h1>
+        <center><input type="text" id="userName" placeholder="Enter user name" />
+        <button class="enter-btn" onclick="startQuiz()">Enter</button>
+      </div></center>
+      <hr />
+
+      <div class="category-section">
+        <h1 class="selection">Select Quiz </h1>
+        <button class="selectQuizBtn" onclick="selectCategory('HTML')">HTML</button>
+        <button class="selectQuizBtn" onclick="selectCategory('CSS')">CSS</button>
+        <button class="selectQuizBtn" onclick="selectCategory('Javascript')">Javascript</button>
+        <button class="selectQuizBtn" onclick="selectCategory('DSA')">Data Structure</button>
+      </div>
+    </div>
+
+    <!-- Quiz Page -->
+    <div id="quizPage" class="page">
+      <div id="quizHeader">
+        <span id="timer">Timer: 100 seconds</span>
+        <span id="score">Score: 0</span>
+      </div>
+      <div id="questionContainer">
+        <!-- Questions will be dynamically loaded here -->
+      </div>
+      <div class="quiz-buttons">
+        <button id="prevQuestionBtn" onclick="prevQuestion()">
+          Previous Question
+        </button>
+        <button id="nextQuestionBtn" onclick="nextQuestion()">
+          Next Question
+        </button>
+      </div>
+    </div>
+
+    <!-- Result Page -->
+    <div id="resultPage" class="page">
+      <h2 id="rslt">Quiz Result</h2>
+      <h3>nice try! keep practicing, keep growing</h3>
+      <p class="result">Name: <span id="resultName"></span></p>
+      <p class="result">Total Time Taken: <span id="totalTime"></span></p>
+      <p class="result">Total Questions: <span id="totalQuestions"></span></p>
+      <p class="result">Attempted: <span id="attemptedQuestions"></span></p>
+      <p class="result">Correct Answers: <span id="correctAnswers"></span></p>
+      <p class="result">Wrong Answers: <span id="wrongAnswers"></span></p>
+      <p class="result">Score: <span id="scorePercentage"></span>%</p>
+      <div class="quiz-buttons">
+        <button class="startAgainBtn" onclick="restartQuiz()">Start Again</button>
+        <button class="GoHomeBtn" onclick="goToHome()">Go to Home</button>
+      </div>
+    </div>
+
+    <script src="quiz code.js"></script>
+  </body>
+</html>
